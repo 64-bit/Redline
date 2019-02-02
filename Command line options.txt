@@ -1,0 +1,12 @@
+
+
+Usage
+
+Redline [Flags] [Options] SceneFile
+
+SceneFile: Specifiy a path to the GLTF file to render, this is the only required command line option.
+
+Command line flags
+
+-help
+	Prints documentation for command line options. The application will imediaitly exit afterwards.

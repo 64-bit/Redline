@@ -1,0 +1,240 @@
+{
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5125,
+            "count" : 15360,
+            "max" : [
+                15359
+            ],
+            "min" : [
+                0
+            ],
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 15360,
+            "max" : [
+                1.0,
+                1.0,
+                0.9999999403953552
+            ],
+            "min" : [
+                -0.9999999403953552,
+                -1.0,
+                -0.9999999403953552
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 15360,
+            "max" : [
+                0.999969482421875,
+                0.999969482421875,
+                1.0
+            ],
+            "min" : [
+                -0.999969482421875,
+                -0.999969482421875,
+                -1.0
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5126,
+            "count" : 15360,
+            "max" : [
+                1.0,
+                0.9044619202613831,
+                1.0,
+                1.0
+            ],
+            "min" : [
+                -1.0,
+                -0.9044625163078308,
+                -1.0,
+                1.0
+            ],
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 15360,
+            "max" : [
+                1.0,
+                1.0
+            ],
+            "min" : [
+                0.0,
+                0.0
+            ],
+            "type" : "VEC2"
+        }
+    ],
+    "asset" : {
+        "generator" : "Khronos Blender glTF 2.0 exporter",
+        "version" : "2.0"
+    },
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 61440,
+            "byteOffset" : 0,
+            "target" : 34963
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 184320,
+            "byteOffset" : 61440,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 184320,
+            "byteOffset" : 245760,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 245760,
+            "byteOffset" : 430080,
+            "target" : 34962
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 122880,
+            "byteOffset" : 675840,
+            "target" : 34962
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 798720,
+            "uri" : "furnace.bin"
+        }
+    ],
+    "cameras" : [
+        {
+            "name" : "Camera",
+            "perspective" : {
+                "aspectRatio" : 1.3333333333333333,
+                "yfov" : 0.5329701873765126,
+                "zfar" : 100.0,
+                "znear" : 0.10000000149011612
+            },
+            "type" : "perspective"
+        }
+    ],
+    "extensions" : {
+        "KHR_lights" : {
+            "lights" : [
+                {
+                    "color" : [
+                        0.0,
+                        0.0,
+                        0.0
+                    ],
+                    "name" : "Ambient_Scene",
+                    "type" : "ambient"
+                }
+            ]
+        }
+    },
+    "extensionsRequired" : [
+        "KHR_lights"
+    ],
+    "extensionsUsed" : [
+        "KHR_lights"
+    ],
+    "materials" : [
+        {
+            "name" : "Material",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.18116427958011627,
+                    0.18116427958011627,
+                    0.18116427958011627,
+                    1.0
+                ],
+                "metallicFactor" : 0.0,
+                "roughnessFactor" : 0.9634883403778076
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Icosphere.004",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "NORMAL" : 2,
+                        "POSITION" : 1,
+                        "TANGENT" : 3,
+                        "TEXCOORD_0" : 4
+                    },
+                    "indices" : 0,
+                    "material" : 0
+                }
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "camera" : 0,
+            "name" : "Correction_Camera",
+            "rotation" : [
+                -0.7071067690849304,
+                -0.0,
+                0.0,
+                0.7071067690849304
+            ]
+        },
+        {
+            "children" : [
+                0
+            ],
+            "name" : "Camera",
+            "rotation" : [
+                -2.703204238230228e-08,
+                0.7858469486236572,
+                -0.6184210777282715,
+                -4.5481360899657375e-09
+            ],
+            "scale" : [
+                1.0000001192092896,
+                1.0,
+                1.0
+            ],
+            "translation" : [
+                -0.040816206485033035,
+                2.561457872390747,
+                -11.340007781982422
+            ]
+        },
+        {
+            "mesh" : 0,
+            "name" : "Icosphere"
+        }
+    ],
+    "scene" : 0,
+    "scenes" : [
+        {
+            "extensions" : {
+                "KHR_lights" : {
+                    "light" : 0
+                }
+            },
+            "name" : "Scene",
+            "nodes" : [
+                2,
+                1
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+Debug/*
+Release/*
+Builds/*
+Temp/*
+
+.vs/*
+.pdb*
+*.TMP
+*.vspx
+*.user

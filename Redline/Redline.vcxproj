@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CBC777B5-F3FF-4126-91D7-18238D9D9B17}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Redline</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>Redline</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Temp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Redline;$(SolutionDir)Libs\SingleFileLibs;$(SolutionDir)Libs\sdl2\include;$(SolutionDir)Libs\mathfu\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\sdl2\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)Libs\sdl2\lib\x64\SDL2.dll $(SolutionDir)$Builds\(ProjectName)\$(Platform)\$(Configuration)\SDL2.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Redline;$(SolutionDir)Libs\SingleFileLibs;$(SolutionDir)Libs\sdl2\include;$(SolutionDir)Libs\mathfu\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\sdl2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)Libs\sdl2\lib\x64\SDL2.dll $(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\SDL2.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Redline;$(SolutionDir)Libs\SingleFileLibs;$(SolutionDir)Libs\sdl2\include;$(SolutionDir)Libs\mathfu\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\sdl2\lib\x86</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)Libs\sdl2\lib\x64\SDL2.dll $(SolutionDir)$Builds\(ProjectName)\$(Platform)\$(Configuration)\SDL2.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Redline;$(SolutionDir)Libs\SingleFileLibs;$(SolutionDir)Libs\sdl2\include;$(SolutionDir)Libs\mathfu\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Libs\sdl2\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sdl2.lib;sdl2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(SolutionDir)Libs\sdl2\lib\x64\SDL2.dll $(SolutionDir)Builds\$(ProjectName)\$(Platform)\$(Configuration)\SDL2.dll</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CompileTimeSettings.h" />
+    <ClInclude Include="FileFormats\GLTFSceneLoader.h" />
+    <ClInclude Include="FileFormats\GLTFUtilities.h" />
+    <ClInclude Include="GraphicalResources\Bitmap2D.h" />
+    <ClInclude Include="GraphicalResources\Bitmap2DFloat.h" />
+    <ClInclude Include="GraphicalResources\Color.h" />
+    <ClInclude Include="GraphicalResources\CubemapTexture.h" />
+    <ClInclude Include="GraphicalResources\Material.h" />
+    <ClInclude Include="GraphicalResources\MaterialEnums.h" />
+    <ClInclude Include="GraphicalResources\MeshTriangle.h" />
+    <ClInclude Include="GraphicalResources\MeshVertex.h" />
+    <ClInclude Include="GraphicalResources\TriangleMesh.h" />
+    <ClInclude Include="Math\BoundingBox.h" />
+    <ClInclude Include="Math\BVH\BVH.h" />
+    <ClInclude Include="Math\Directions.h" />
+    <ClInclude Include="Math\ImageRectangle.h" />
+    <ClInclude Include="Math\KDTree\KDTree.h" />
+    <ClInclude Include="Math\KDTree\KDTreeNode.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Ray.h" />
+    <ClInclude Include="Math\Sampling.h" />
+    <ClInclude Include="Math\Sphere.h" />
+    <ClInclude Include="Renderer\BRDF\BRDF.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\CookTorrence.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\DistributionFunction.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\FresnelFunction.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\Functions\GGX_Distribution.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\Functions\GGX_Geometry.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\Functions\Schlick_Fresnel.h" />
+    <ClInclude Include="Renderer\BRDF\CookTorrence\GeometryFunction.h" />
+    <ClInclude Include="Renderer\BRDF\Phong\PhongBRDF.h" />
+    <ClInclude Include="Renderer\FrameRenderer.h" />
+    <ClInclude Include="Renderer\PathTracer.h" />
+    <ClInclude Include="Renderer\RayLifeDetails.h" />
+    <ClInclude Include="Renderer\Raytracer.h" />
+    <ClInclude Include="Renderer\FrameOutputSettings.h" />
+    <ClInclude Include="Renderer\Raytracer\Lights\DirectionalLight.h" />
+    <ClInclude Include="Renderer\Raytracer\Lights\Light.h" />
+    <ClInclude Include="Renderer\Raytracer\Lights\PointLight.h" />
+    <ClInclude Include="Renderer\Raytracer\Lights\SpotLight.h" />
+    <ClInclude Include="Renderer\Raytracer\RayHitSurfaceDetails.h" />
+    <ClInclude Include="Renderer\Raytracer\Surfaces\SphereSurface.h" />
+    <ClInclude Include="Renderer\Raytracer\Surfaces\Surface.h" />
+    <ClInclude Include="Renderer\Raytracer\Surfaces\TriangleMeshSurface.h" />
+    <ClInclude Include="Renderer\RenderPendingQueueJob.h" />
+    <ClInclude Include="Renderer\RenderTileInfo.h" />
+    <ClInclude Include="Renderer\SceneLightingData.h" />
+    <ClInclude Include="Renderer\ViewRay.h" />
+    <ClInclude Include="Scene\Components\CameraComponent.h" />
+    <ClInclude Include="Scene\Components\Lights\DirectionalLightComponent.h" />
+    <ClInclude Include="Scene\Components\Lights\PointLightComponent.h" />
+    <ClInclude Include="Scene\Components\Lights\SpotLightComponent.h" />
+    <ClInclude Include="Scene\Components\Renderable\MeshRenderer.h" />
+    <ClInclude Include="Scene\Components\Renderable\RenderableSceneComponent.h" />
+    <ClInclude Include="Scene\Components\Renderable\SphereRenderer.h" />
+    <ClInclude Include="Scene\SceneForwardDeclarations.h" />
+    <ClInclude Include="Scene\SceneObject.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneObjectComponent.h" />
+    <ClInclude Include="Scene\Transform.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utilities\Multithreading\AutoResetThreadGate.h" />
+    <ClInclude Include="Utilities\Multithreading\BasicThreadpoolJob.h" />
+    <ClInclude Include="Utilities\Multithreading\Promis.h" />
+    <ClInclude Include="Utilities\Multithreading\ThreadGate.h" />
+    <ClInclude Include="Utilities\Multithreading\ThreadLocalRandom.h" />
+    <ClInclude Include="Utilities\Multithreading\Threadpool.h" />
+    <ClInclude Include="Utilities\Multithreading\IThreadpoolJob.h" />
+    <ClInclude Include="Utilities\Multithreading\ThreadpoolThread.h" />
+    <ClInclude Include="Utilities\Stopwatch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FileFormats\GLTFSceneLoader.cpp" />
+    <ClCompile Include="FileFormats\GLTFUtilities.cpp" />
+    <ClCompile Include="FileFormats\StbImageCompilation.cpp" />
+    <ClCompile Include="FileFormats\TinyGltfCompilation.cpp" />
+    <ClCompile Include="GraphicalResources\Bitmap2D.cpp" />
+    <ClCompile Include="GraphicalResources\Bitmap2DFloat.cpp" />
+    <ClCompile Include="GraphicalResources\CubemapTexture.cpp" />
+    <ClCompile Include="GraphicalResources\Loaders\LodePngCompilationUnit.cpp" />
+    <ClCompile Include="GraphicalResources\Material.cpp" />
+    <ClCompile Include="GraphicalResources\MeshTriangle.cpp" />
+    <ClCompile Include="GraphicalResources\TriangleMesh.cpp" />
+    <ClCompile Include="Math\BoundingBox.cpp" />
+    <ClCompile Include="Math\BVH\BVH.cpp" />
+    <ClCompile Include="Math\Directions.cpp" />
+    <ClCompile Include="Math\KDTree\KDTreeNode.cpp" />
+    <ClCompile Include="Math\Math.cpp" />
+    <ClCompile Include="Math\Sampling.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
+    <ClCompile Include="Renderer\BRDF\BRDF.cpp" />
+    <ClCompile Include="Renderer\BRDF\CookTorrence\Functions\GGX_Distribution.cpp" />
+    <ClCompile Include="Renderer\BRDF\CookTorrence\Functions\GGX_Geometry.cpp" />
+    <ClCompile Include="Renderer\BRDF\CookTorrence\Functions\Schlick_Fresnel.cpp" />
+    <ClCompile Include="Renderer\BRDF\Phong\PhongBRDF.cpp" />
+    <ClCompile Include="Renderer\BRDF\CookTorrence\CookTorrence.cpp" />
+    <ClCompile Include="Renderer\FrameRenderer.cpp" />
+    <ClCompile Include="Renderer\PathTracer.cpp" />
+    <ClCompile Include="Renderer\Raytracer.cpp" />
+    <ClCompile Include="Renderer\Raytracer\Lights\DirectionalLight.cpp" />
+    <ClCompile Include="Renderer\Raytracer\Lights\PointLight.cpp" />
+    <ClCompile Include="Renderer\Raytracer\Lights\SpotLight.cpp" />
+    <ClCompile Include="Renderer\Raytracer\Surfaces\SphereSurface.cpp" />
+    <ClCompile Include="Renderer\Raytracer\Surfaces\TriangleMeshSurface.cpp" />
+    <ClCompile Include="Renderer\RenderPendingQueueJob.cpp" />
+    <ClCompile Include="Renderer\RenderTileInfo.cpp" />
+    <ClCompile Include="Scene\Components\CameraComponent.cpp" />
+    <ClCompile Include="Scene\Components\Lights\DirectionalLightComponent.cpp" />
+    <ClCompile Include="Scene\Components\Lights\PointLightComponent.cpp" />
+    <ClCompile Include="Scene\Components\Lights\SpotLightComponent.cpp" />
+    <ClCompile Include="Scene\Components\Renderable\MeshRenderer.cpp" />
+    <ClCompile Include="Scene\Components\Renderable\RenderableSceneComponent.cpp" />
+    <ClCompile Include="Scene\Components\Renderable\SphereRenderer.cpp" />
+    <ClCompile Include="Scene\SceneObject.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneObjectComponent.cpp" />
+    <ClCompile Include="Scene\Transform.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utilities\Multithreading\AutoResetThreadGate.cpp" />
+    <ClCompile Include="Utilities\Multithreading\ThreadGate.cpp" />
+    <ClCompile Include="Utilities\Multithreading\ThreadLocalRandom.cpp" />
+    <ClCompile Include="Utilities\Multithreading\Threadpool.cpp" />
+    <ClCompile Include="Utilities\Multithreading\ThreadpoolThread.cpp" />
+    <ClCompile Include="Utilities\Stopwatch.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
